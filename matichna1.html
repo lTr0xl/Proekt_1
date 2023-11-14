@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charseet="utf-8">
+        <title>MB Gigabyte B650M DS3H</title>
+        <link rel="icon" type="image/png" href="sliki/logo.png">
+        <script src="js/login.js"></script>
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/matichna1.css">
+        <script src="js/matichna1.js"></script>
+        <script src="https://kit.fontawesome.com/8818ee460b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="navTop">
+                    <div class="logo">
+                        <img src="sliki/logo.png" alt="" width="120" height="100" onclick="goToHome()">
+                        </div>
+                        <div class="middle">
+                            <div class="name1"><h1>MONSONA</h1></div>
+                            <div class="search">
+                                <input type="text" placeholder="Search..." class="searchBar">
+                                <img src="sliki/search.png" alt="search" class="searchIcon" width="30" height="30">
+                            </div>
+                            <div class="name2"><h1>SHOP</h1></div>
+                        </div>
+                        <div class="login">
+                            <img src="sliki/login-filip.png" alt="login" width="130" height="80" onclick="goToLogin()">
+                        </div>
+                </div>
+                <hr>
+            </nav>
+        </header>
+        
+        
+
+        <div class="back">
+            <div class="product-img">
+                <div class="name">
+                    <h2>MB Gigabyte B650M DS3H</h2>
+                </div>
+                <div class="prodcut-gallery">
+                    <img id="image" src="sliki/matichni/matichna1.jpg" style="width: 400px; height: 400px;" onclick="zoom(this)"> 
+                </div>
+                <div class="small">
+                <ul id="prodcut-images" class="inline">
+                    <li class="item">
+                        <a href="#" class="change"><img src="sliki/matichni/matichna1.jpg" style="width:70px; height:70px"  onclick="first()"></a>
+                    </li>
+                    <li class="item" >
+                        <a href="#" class="change"><img src="sliki/matichni/matichna1v1.jpg" style="width:70px; height:70px"  onclick="second()"></a>
+                    </li>
+                    
+                </ul>
+                </div>
+                <div class="picture">
+                    <label for="input-img" id="add">Add image</label>
+                    <input type="file" accept="image/jpeg,image/png,image/jpg" id="input-img">
+                    <button id="remove-img">Remove</button>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="info">
+                <div class="price">
+                    <h1>Price: <span id="price">189</span>&euro;</h1>
+                </div>
+               
+
+                <div class="like-share">
+                    <button class="like" id="like">Like   <span class="fa fa-thumbs-up"></span><span class="number" id="number">0</span></button>
+                </div>
+
+                <div class="comment-container">
+                    <div class="pushpin">
+                        <img src="sliki/pushpin.png" width="30px" height="30px">
+                    </div>
+                    <h4>Comment Section</h4>
+                    <div class="comment-box">
+                        <div class="comment-area">
+                            <textarea type="text" id="textarea" rows="5" cols="45" required placeholder="Enter your comment..."></textarea>
+                        </div>
+                        <div class="comment-btn">
+                            <button id="commentBtn">Comment</button>
+                        </div>
+                    </div>
+                    <div class="comment-list">
+                        <ul id="comment-ul">
+                            
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+           
+
+            <div class="buyform">
+                <h2>Order Now</h2>
+                <form action="#">
+                    <h4>Account</h4>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Full Name" required class="fname"><span class="fas fa-user-alt icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Email Address" required class="fname">
+                            <span class="fas fa-envelope icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="Address" required class="fname">
+                            <span class="fas fa-map-marker-alt icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="text" placeholder="City" required class="fname">
+                            <span class="fas fa-institution icon"></span>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <h4>Quantity: <span id="quantity">0</span><span class="fa fa-plus" id="plus"></span><span class="fa fa-minus" id="minus"></span></h4>
+                            <h4>Total: <span id="total">0</span>&euro;</h4>
+                        </div>
+                    </div>
+                    
+
+                    <h4>Payment Details</h4>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="tel" name="" class="fname" placeholder="Card Number 1111-2222-3333-4444" required>
+                            <i class="fa fa-credit-card icon"></i>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <input type="tel" name="" class="fname" placeholder="Card CVC 632" required>
+                            <i class="fa fa-user icon"></i>
+                        </div>
+                    </div>
+                    <div class="input-group">
+            
+                            <div class="input-box">
+                                <input type="number" placeholder="Exp Month" required class="fname">
+                                <i class="fa fa-calendar icon"></i>
+                            </div>
+                        
+                        <div class="input-box">
+                            <input type="number" placeholder="Exp Year" required class="fname err">
+                            <i class="fa fa-calendar-o icon iconErr" ></i>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="number" placeholder="Enter Amount" required class="fname">
+                        <i class="fa fa-money icon" ></i>
+                    </div>
+
+                    
+                    <div class="input-group">
+                        <div class="input-box">
+                            <button type="submit" class="paynow">PAY NOW</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        
+
+        <div class="description">
+            <h4>Description</h4>
+            <span id="name-span"></span>
+            <pre><b>CPU:</b> AMD Socket AM5, support for: AMD Ryzen™ 7000 Series Processors
+
+<b>Chipset</b>: AMD B650
+<b>Memory</b>: Support for DDR5 6400(OC) / 6200(OC) / 6000(OC) / 5600(OC) / 5200 / 4800 / MT/s memory modules
+4 x DDR5 DIMM sockets supporting up to 128 GB (32 GB single DIMM capacity) of <b>system</b> memory
+Dual channel memory architecture
+Support for non-ECC Un-buffered DIMM 1Rx8/2Rx8/1Rx16 memory modules
+Support for AMD Extended Profiles for Overclocking (AMD EXPO™) and Extreme <b>Memory</b> Profile (XMP) memory modules
+(Please refer "<b>Memory</b> Support List" for more information.)
+
+Onboard <b>Graphics:</b>
+Integrated Graphics <b>Processor:</b>
+2 x DisplayPorts, supporting a maximum resolution of 3840x2160@144 Hz
+* Support for DisplayPort 1.4 version and HDR.
+1 x HDMI port, supporting a maximum resolution of 4096x2160@60 Hz
+* Support for HDMI 2.1 version and HDCP 2.3.
+** Support native HDMI 2.1 TMDS compatible ports.
+Support for up to 3 displays at the same time
+
+<b>Audio:</b>
+Realtek® Audio CODEC
+High Definition Audio
+2/4/5.1/7.1-channel
+
+<b>LAN</b>: Realtek® 2.5GbE <b>LAN</b> chip (2.5 Gbps/1 Gbps/100 Mbps)
+
+<b>Expansion Slots</b>
+<b>CPU:</b> 1 x PCI Express x16 slot, supporting PCIe 4.0 and running at x16 (PCIEX16)
+<b>Chipset</b>: 1 x PCI Express x1 slot, supporting PCIe 3.0 and running at x1 (PCIEX1)
+
+<b>Storage</b> Interface
+<b>CPU:</b> 2 x M.2 connectors (Socket 3, M key, type 25110/2280 PCIe 4.0 x4/x2 SSD support)
+<b>Chipset</b>: 4 x SATA 6Gb/s connectors
+RAID 0, RAID 1, and RAID 10 support for NVMe SSD storage devices
+RAID 0, RAID 1, and RAID 10 support for SATA storage devices
+
+<b>USB:</b>
+<b>CPU:</b> 1 x USB Type-C® port on the back panel, with USB 3.2 Gen 2 support
+1 x USB 3.2 Gen 2 Type-A port (red) on the back panel
+CPU + USB 2.0 Hub: 4 x USB 2.0/1.1 ports on the back panel
+<b>Chipset</b>: 1 x USB Type-C® port with USB 3.2 Gen 2 support, available through the internal USB header
+4 x USB 3.2 Gen 1 ports (2 ports on the back panel, 2 ports available through the internal USB header)
+4 x USB 2.0/1.1 ports available through the internal USB headers
+
+Internal I/O <b>Connectors:</b>
+1 x addressable LED strip header
+1 x RGB LED strip header
+2 x M.2 Socket 3 connectors
+1 x Trusted Platform Module header (For the GC-TPM2.0 SPI/GC-TPM2.0 SPI 2.0 module only)
+1 x serial port header
+
+<b>Back Panel Connectors</b>:
+4 x USB 2.0/1.1 ports
+1 x PS/2 keyboard/mouse port
+2 x DisplayPorts
+1 x HDMI port
+1 x USB 3.2 Gen 2 Type-A port (red)
+1 x USB Type-C® port, with USB 3.2 Gen 2 support
+1 x Q-<b>Flash</b> Plus button
+1 x RJ-45 port
+2 x USB 3.2 Gen 1 ports
+3 x audio jacks
+
+<b>Operating <b>system</b></b>: Windows 11 64-bit, Windows 10 64-bit
+Form Factor: Micro ATX Form Factor; 24.4cm x 24.4cm
+
+More info: <a style="text-decoration: underline;" target="_new" href="https://www.gigabyte.com/Motherboard/B650M-DS3H-rev-10#kf">More informations... </a> </pre>                    
+        </div>
+
+
+
+        <footer>
+            <div class="main-content">
+                <div class="leftF box">
+                    <h2>About us</h2>
+                    <div class="content">
+                        <p>At The Monsona store we are committed to providing superior customer service, expert advice and competitive pricing on and extensive range of quality products for tradies and DIYers. Products include; housewares, hardware, power and hand tools, electrical, plumbing, paints, outdoor living, automotive, gardening, building supplies, timber and much more.</p>
+                        <div class="socials">
+                            <a href="#"><span class="fab fa-facebook-f"></span></a>
+                            <a href="#"><span class="fab fa-twitter"></span></a>
+                            <a href="#"><span class="fab fa-instagram"></span></a>
+                            <a href="#"><span class="fab fa-youtube"></span></a>
+                            <a href="#"><span class="fab fa-github"></span></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="middleF box">
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">226 Chatham Way Reston MD Maryland</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">02 9319 5216 | 02 9810 2388</span>
+                        </div>
+                        <div class="email">
+                            <span class="fas fa-envelope"></span>
+                            <span class="text">nikolovtoshe22@gmail.com</span>
+                        </div>
+                        <div class="form">
+                            <a href="anketa.html">Help us improve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightF box">
+                    <h2>Contact us</h2>
+                    <div class="content">
+                        <form action="#">
+                            <div class="email">
+                                <div class="text">Email *</div>
+                                <input type="email" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message *</div>
+                                <textarea rows="5" cols="40" required></textarea>
+                            </div>
+                            <div class="btn">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
